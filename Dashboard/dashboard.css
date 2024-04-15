@@ -58,6 +58,14 @@ form input{
     height: 20px;
 }
 
+.settings{
+    width: 25px;
+    height: 25px;
+    background-color: aliceblue;
+    border: 1px solid gray; 
+    border-radius: 2px;
+}
+
 #search{
     margin-left: -40px;
     margin-bottom: -2px;
@@ -96,19 +104,26 @@ form input{
     margin: 20px 55px;
 }
 
+.select_class_time select{
+    cursor: pointer;
+    background-color: #121927;
+    color: #ffffff;
+}
 .overall-details{
     display: flex;
     justify-content: space-around;
+    margin : auto;
+    width: 90%;
 }
 .total-students,
 .present-today,
 .absent-today,
 .on-duty{
-    width: 18%;
+    width: 240px;
     height: 100px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px #121927;
+    box-shadow: 0px 0px 8px gray;
     display: flex;
     justify-content:flex-start;
     align-items: center;
@@ -120,3 +135,44 @@ form input{
 .overall-details .present-today{
     background-color: #32D583;
 }
+
+.chart{
+    display: flex;
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    margin-top: 10px;
+}
+.Attendance-chart-head{
+    width: 700px;
+    height: 90%;
+    background-color: #ffffff;
+    margin:auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px gray;
+
+}
+.Attendance-chart-head h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+}
+.class-strength-chart-head{
+    width: 400px;
+    height: 90%;
+    background-color: #ffffff;
+    margin:auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px gray;
+
+}
+.class-strength-chart-head h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+}
+.graph{
+    height: 80%;
+    width: 100%;
+ }
+ .graph canvas{
+    margin: auto;
+ }
