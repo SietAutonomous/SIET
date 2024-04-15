@@ -18,7 +18,7 @@ var data = {
         stacked: false,
         grid: {
           display: true,
-          color: "rgba(255,99,132,0.2)"
+          color: "rgba(255,99,132,0.20)"
         }
       },
       x: {
@@ -36,14 +36,14 @@ var data = {
   });
 
   var data = {
-    labels: ["IT-A", "IT-B", "IT-C", "CSE", "AIML-A", "AIML-B", "BT"],
+    labels: ["IT-A", "IT-B", "IT-C"],
     datasets: [
       {
         label: "class strength",
         borderColor: "#32D583",
         borderWidth: 2,
         hoverBorderColor: "yellow",
-        data: [65, 59, 20, 81, 56, 55, 40]
+        data: [59,60,60]
       }
     ]
   };
