@@ -119,7 +119,7 @@ form input{
 .present-today,
 .absent-today,
 .on-duty{
-    width: 240px;
+    width: 20%;
     height: 100px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -127,6 +127,7 @@ form input{
     display: flex;
     justify-content:flex-start;
     align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .icon{
     margin-left: 20px;
@@ -144,7 +145,7 @@ form input{
     margin-top: 10px;
 }
 .Attendance-chart-head{
-    width: 700px;
+    width: 55%;
     height: 90%;
     background-color: #ffffff;
     margin:auto;
@@ -157,7 +158,7 @@ form input{
     margin: 10px;
 }
 .class-strength-chart-head{
-    width: 400px;
+    width: 35%;
     height: 90%;
     background-color: #ffffff;
     margin:auto;
@@ -169,10 +170,3 @@ form input{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 10px;
 }
-.graph{
-    height: 80%;
-    width: 100%;
- }
- .graph canvas{
-    margin: auto;
- }

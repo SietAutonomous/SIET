@@ -1,75 +1,51 @@
-var data = {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-    datasets: [
-      {
-        label: "Depending on Percentage",
-        borderColor: "#32D583",
-        borderWidth: 2,
-        hoverBorderColor: "yellow",
-        data: [65, 59, 20, 81, 56, 55, 40]
-      }
-    ]
-  };
-  
-  var option = {
-    responsive: false,
-    scales: {
-      y: {
-        stacked: false,
-        grid: {
-          display: true,
-          color: "rgba(255,99,132,0.20)"
-        }
-      },
-      x: {
-        grid: {
-          display: false
-        }
-      }
-    }
-  };
-  
-  new Chart("TAG", {
-    type: "line",
-    options: option,
-    data: data
-  });
+var ctx = document.getElementById('TAG').getContext('2d');
 
-  var data = {
-    labels: ["IT-A", "IT-B", "IT-C"],
-    datasets: [
-      {
-        label: "class strength",
-        borderColor: "#32D583",
-        borderWidth: 2,
+var data = {
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    datasets: [{
+      label: 'Monthly Percentage',
+      backgroundColor: '#32D583',
+      borderColor: '#32D583',
+      borderWidth: 2,
+      hoverBorderWidth: 4,
+      hoverBorderColor: "yellow",
+      data: [80,89,75,79,90,93,77]
+    }]
+};
+
+var options = {
+    responsive: true,
+    maintainAspectRatio: false
+};
+
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: data,
+    options: options
+});
+
+var ctx = document.getElementById('TAG1').getContext('2d');
+
+var data = {
+    labels: ['IT-A', 'IT-B', 'IT-C'],
+    datasets: [{
+        label: 'SEM Percentage',
+        backgroundColor: '#32D583',
+        borderColor: '#32D583',
+        borderWidth: 0,
+        hoverBorderWidth: 2,
         hoverBorderColor: "yellow",
-        data: [59,60,60]
-      }
-    ]
-  };
-  
-  var option = {
-    responsive: false,
-    scales: {
-      y: {
-        stacked: false,
-        grid: {
-          display: true,
-          color: "rgba(255,99,132,0.2)"
-        }
-      },
-      x: {
-        grid: {
-          display: false
-        }
-      }
-    }
-  };
-  
-  new Chart("TAG1", {
-    type: "bar",
-    options: option,
-    data: data
-  });
-  
-  
+        data: [93,87,89]
+    }]
+};
+
+var options = {
+    responsive: true,
+    maintainAspectRatio: false
+};
+
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: data,
+    options: options
+});
