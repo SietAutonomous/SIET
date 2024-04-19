@@ -190,7 +190,15 @@ nav img{
 }
 .top5Students .graph-row2 , .least5Students .graph-row2 {
     margin: auto;
-    padding: 15px;
+    padding: 20px;
+}
+.top5Students .graph-row2 .no1,
+.top5Students .graph-row2 .no2,
+.top5Students .graph-row2 .no3,
+.top5Students .graph-row2 .no4,
+.top5Students .graph-row2 .no5{
+    display: flex;
+    justify-content: space-between;
 }
 .least5Students{
     width: 30%;
@@ -199,6 +207,15 @@ nav img{
     margin:auto;
     border-radius: 10px;
     box-shadow: 0px 0px 8px #121927b6;
+}
+
+.least5Students .graph-row2 .no1,
+.least5Students .graph-row2 .no2,
+.least5Students .graph-row2 .no3,
+.least5Students .graph-row2 .no4,
+.least5Students .graph-row2 .no5{
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-dashboard{
