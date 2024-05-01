@@ -112,6 +112,41 @@ nav img {
   padding: 2px;
   display: none;
 }
+.side-bar{
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  position: fixed;
+  top:51px;
+  right: 0;
+  background-color: #121927c2;
+  height: 200px;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  border-radius: 0px 0px 0px 20px;
+  button{
+    width: 100%;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  button:hover{
+      background-color: #32d5835e;
+  }
+  button.menu{
+    margin: 0px;
+    width: auto;
+    width: 20px;
+  }
+  display: none;
+}
+.cancel{
+  display: none;
+}
 .select_class_time {
   margin: 20px 55px;
 }
@@ -273,11 +308,13 @@ nav img {
 }
 
 .footer-dashboard {
+  display: flex;
+  justify-content: space-around;
   text-align: center;
   background-color: #121927;
   color: #32d583;
   margin-top: 15%;
-  padding: 20px;
+  padding: 20px 10%;
 }
 
 /* media (respect to screen width )*/
@@ -328,7 +365,6 @@ nav img {
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     row-gap: 25px;
-    width: 95%;
   }
 }
 @media screen and (max-width: 580px) {
@@ -341,6 +377,12 @@ nav img {
     background-color: #121927;
     border: 1px solid #32d583;
     border-radius: 3px;
+  }
+  .cancel{
+    display: none;
+  }
+  .overall-details {
+    width: 95%;
   }
   .chart-row1,
   .chart-row2 {

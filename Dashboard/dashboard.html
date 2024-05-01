@@ -63,7 +63,7 @@
           </button>
           <button style="width: 20%; cursor: pointer">TUTOR</button>
         </section>
-        <button class="menu">
+        <button class="menu" onclick=sideBarOpen()>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -78,9 +78,29 @@
             ></path>
           </svg>
         </button>
+        <button class="menu cancel" onclick=sideBarClose()>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="100%"
+            height="100%"
+            viewBox="0 0 50 50"
+            fill="white"
+          >
+            <path
+              d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"
+            ></path>
+          </svg>
+        </button>
       </nav>
     </section>
-
+    <section class="side-bar">
+      <button>Dashboard</button>
+      <button>Attendance</button>
+      <button>Student's List</button>
+      <button>Reports</button>
+    </section>
     <section
       style="
         background-color: #121927;
@@ -465,23 +485,30 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./charts.js"></script>
+    <script src="./menu.js"></script>
 
     <footer class="footer-dashboard">
-      <p>
-        Approved by AICTE, New Delhi | Affiliated to Anna University, Chennai
-        Accredited by NBA [CSE, EEE, ECE, IT, MECH] & NAAC with A Grade
-      </p>
-      <br />
-      <p>
-        Sri Shakthi Nagar, L & T By - Pass, Chinniyampalayam Post, Coimbatore -
-        62.
-      </p>
-      <p>Principal E-Mail: principal@siet.ac.in +91 422 2369900</p>
-      <p>admissions@siet.ac.in</p>
-      <p>
-        COPYRIGHT © SRI SHAKTHI INSTITUTE OF ENGINEERING AND TECHNOLOGY. | ALL
-        RIGHTS RESERVED.
-      </p>
+      <div class="footer-info" style="padding: 5%">
+        <p>
+          Sri Shakthi Nagar, L & T By - Pass, Chinniyampalayam Post, Coimbatore
+          - 62.
+        </p>
+        <p>For admission : admissions@siet.ac.in</p>
+        <p>
+          COPYRIGHT © SRI SHAKTHI INSTITUTE OF ENGINEERING AND TECHNOLOGY. | ALL
+          RIGHTS RESERVED.
+        </p>
+      </div>
+      <hr />
+      <div class="footer-contact" style="padding: 5%">
+        <div class="footer-head">
+          <i><h3>Contact</h3></i>
+        </div>
+        <div class="footer-body">
+          E-Mail: principal@siet.ac.in <br />
+          +91 422 2369900
+        </div>
+      </div>
     </footer>
   </body>
 </html>
