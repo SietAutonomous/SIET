@@ -7,7 +7,7 @@
     <title>Dashboard</title>
     <link
       rel="shortcut icon"
-      href="./logo.png"
+      href="../Dashboard/logo.png"
       type="image/x-icon"
     />
     <link href="Attendance.css" rel="stylesheet" />
@@ -17,7 +17,7 @@
       <nav>
         <section class="title-side-left">
           <img
-            src="logo.png"
+            src="../Dashboard/logo.png"
             alt="logo"
             width="40px"
             height="auto"
@@ -26,8 +26,8 @@
           <h1 class="SIET">SIET</h1>
 
           <section class="opptions">
-            <button>Dashboard</button>
-            <button>Attendance</button>
+            <button><a href="../Dashboard/dashboard.html">Dashboard</a></button>
+            <button><a href="../Attendance/Attendance.html">Attendance</a></button>
             <button>Student's List</button>
             <button>Reports</button>
           </section>
@@ -108,22 +108,38 @@
     </section>
     <section class="atttendance-sidebar">
       <button>Attendance</button>
-      <button>Absent</button>
+      <button>Absentees</button>
     </section>
 
-    <section>
-      <section class="std-it-a">
-        <h3>1.ABINAV D.S</h3>
+    <section class="day-period">
+      <select name="day" id="day">
+        <option value="today" >Today</option>
+      </select>
+      <select name="period" id="period">
+        <option value="period" >period</option><hr>
+        <option value="1st">1st</option>
+        <option value="2st">2st</option>
+        <option value="3st">3st</option>
+        <option value="4st">4st</option>
+        <option value="5st">5st</option>
+        <option value="6st">6st</option>
+        <option value="7st">7st</option>
+        <option value="8st">8st</option>
+      </select>
+    </section>
+
+    <section class="students-ITA">
+      <section class="std-card">
+        <h3>1. ABINAV D.S</h3>
         <section class="name-abinav">
           <button class="button button01">Present</button>
+          <form action="none">
           <button class="button button02">Absent</button>
+        </form>
         </section>
       </section>
-    </section>
-
-    <section>
-      <section class="std-it-a">
-        <h3>2.ABINAYASRI G</h3>
+      <section class="std-card">
+        <h3>2. ABINAYASRI G</h3>
         <section class="name-abinav">
           <button class="button button01">Present</button>
           <button class="button button02">Absent</button>
