@@ -26,9 +26,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-nav img {
-  margin: 8px 8px 2px 8px;
+  
+  img {
+    margin: 8px 8px 2px 8px;
+  }
 }
 
 .title-side-left {
@@ -363,7 +364,7 @@ nav img {
   .overall-details {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
+    column-gap: 3%;
     row-gap: 25px;
   }
 }
@@ -382,13 +383,13 @@ nav img {
     display: none;
   }
   .overall-details {
-    width: 95%;
+    width: 94%;
   }
   .chart-row1,
   .chart-row2 {
     grid-template-columns: 1fr;
     height: auto;
-    width: 95%;
+    width: 94%;
   }
   .Attendance-chart {
     margin-top: 10px;
@@ -411,7 +412,7 @@ nav img {
     display: grid;
     grid-template-columns: 1fr;
     height: auto;
-    width: 95%;
+    width: 94%;
   }
   .notice-hod,
   .query-hod {
