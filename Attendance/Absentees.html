@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Attendance management</title>
+    <title>Absentees</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
@@ -10,7 +10,7 @@
       href="../Dashboard/logo.png"
       type="image/x-icon"
     />
-    <link href="Attendance.css" rel="stylesheet" />
+    <link href="Absentees.css" rel="stylesheet" />
   </head>
   <body>
     <section class="top">
@@ -28,7 +28,7 @@
           <section class="opptions">
             <button><a href="../Dashboard/dashboard.html">Dashboard</a></button>
             <button><a href="../Attendance/Attendance.html">Attendance</a></button>
-            <button><a href="../Attendance/Absentees.html">Student's List</a></button>
+            <button><a href="../Attendance/Absentees.css">Student's List</a></button>
             <button>Reports</button>
           </section>
         </section>
@@ -107,449 +107,371 @@
       <button>Reports</button>
     </section>
     <section class="atttendance-sidebar">
-      <button>Attendance</button>
-      <button>Absentees</button>
-    </section>
-
-    <section class="day-period">
-      <select name="day" id="day">
-        <option value="today" >Today</option>
-      </select>
-      <select name="period" id="period" onchange="toggleButton()">
-        <option value="" >period</option><hr>
-        <option value="1st" selected>1st</option>
-        <option value="2st">2st</option>
-        <option value="3st">3st</option>
-        <option value="4st">4st</option>
-        <option value="5st">5st</option>
-        <option value="6st">6st</option>
-        <option value="7st">7st</option>
-        <option value="8st">8st</option>
-      </select>
+      <button>Details</button>
+      <button>Marks</button>
     </section>
 
     <section class="students-ITA">
       <section class="std-card">
         <h3>1. ABINAV D.S</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>2. ABINAYASRI G</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>3. ABINESH R</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>4. ABISORNAM M</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>5. ADHITHYA PRANAVE SK</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>6. AJAY P</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>7. AJAY KUMAR D</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>8. AKASH D</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>9. AMMAR H</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>10. ANIKA V</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>11. ANISABARVIN A</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>12. ARCHANA GURUSAMY</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>13. ARUNTHATHI S</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>14. ASHWIN KUMAAR D</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>15. ASHWIN</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>16. BALAADITHYA P</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>17. BALAJI S</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>18. BALASUBIRAMANIYAN P</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>19. BARATH R</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>20. BHARANIDHARAN S</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>21. BARATH GANESH K</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>22. BHAVADHARANI S</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>23. BHUVANASHRI SK</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>24. BOOPALAN M</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>25. BRINDHAA P</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>26. DEEPAK RG</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>27. DEEPAK T</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>28. DEEPIKA S</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>29. DEEPIKA RANI K</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>30. DHAKSINYAA MD</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>31. DHANYA K</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>32. DHARANEESH S</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>33. DHARSHAN R</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>34. DHIVYA S</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>35. DHIVYA V</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>36. DIVYA P</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>37. ELAKKIYA M</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>38. ELAYABHARATHI K</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>39. FLINTOFF J</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>40. GAYATHRI G</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>41. GOKILAVANI M</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>42. GOKUL K</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>43. GOPALAKRISHNAN M</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>44. GOPINATH P</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>45. GOWSIK P</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>46. GUNASEKARAPANDIYAN S</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>47. HAK ASHIQ M</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>48. HARINI M</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>49. HEMALATHA PN</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>50. IMTHIYAZ HUSAIN A</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>51. JEYCHARAN P</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>52. JOTHIGA S</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>53. JUSTUS FABY JEYAKUMAR</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>54. KAARTHIKEYAN B</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>55. KAMESH J</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>56. KAVIN RAJ S</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>57. KAVINIYA M</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>58. KAVINRAJ M</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>59. KIRUTHIGA M</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
       <section class="std-card">
         <h3>60. KRISHNA BHARATHI P</h3>
         <section class="buttons">
-          <button class="button button01" onclick=att(1)>Present</button>
-          <button class="button button02" onclick=att(0)>Absent</button>
+          <button><img src="./dropdown.png" alt="dropdown" width="20px" height="20px"></button>
         </section>
       </section>
-      <button type="button" onclick="sub()" style="padding: 10px 20px;position:absolute;right: 30px;background-color: rgb(255, 199, 57);border: none;border-radius: 8px;margin: 20px 0px;">Submit</button>
     </section>
     <p id="output"></p>
     <script src="./Attendance.js"></script>
