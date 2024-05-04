@@ -65,7 +65,7 @@ nav img {
   background-color: #32d5835e;
   transition: all 0.15s;
 }
-.opptions button:nth-child(2) {
+.opptions a:nth-child(2) {
   border: 3px solid #32d583;
   border-top: 0px;
   border-left: 0px;
